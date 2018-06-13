@@ -3,7 +3,7 @@ def oxford_comma(array)
   new_array = []
   new_array.push(array[array.size - 1])
   if array.size == 1
-    
+    combined_string = array[0]
   elsif array.size == 2
     array.pop
     
