@@ -1,8 +1,17 @@
 def oxford_comma(array)
+  combined_string = ""
   new_array = []
   new_array.push(array[array.size - 1])
-  array.pop
-  combined_string = array.join(", ")
-  combined_string << ", and "
-  combined_string << new_array[0]
+  if array.size == 1
+    
+  elsif array.size == 2
+    array.pop
+    
+  else
+    array.pop
+    combined_string = array.join(", ")
+    combined_string << ", and "
+    combined_string << new_array[0]
+  end
+  return combined_string
 end
