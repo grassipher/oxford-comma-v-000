@@ -1,5 +1,6 @@
 def oxford_comma(array)
-  new_array = array[array.size - 1]
+  new_array = []
+  new_array.push(array[array.size - 1])
   array.pop
   combined_string = array.join(", ")
   combined_string << ", and "
